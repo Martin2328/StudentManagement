@@ -29,7 +29,7 @@ Dependency Injection, and custom middleware for logging.
 
 ## ⚙️ Setup Instructions
 1. Clone the repository  
-   git clone [https://github.com/your-username/your-repo-name.git](https://github.com/Martin2328/StudentManagement)
+   git clone https://github.com/Martin2328/StudentManagement
 2. Update the connection string in `appsettings.json`
 3. Run database migrations
 4. Run the application
