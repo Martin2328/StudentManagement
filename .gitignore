@@ -1,0 +1,66 @@
+# Visual Studio / Rider / VS Code
+.vs/
+.vscode/
+.idea/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.rsuser
+*.ntvs_analysis.dat
+
+# Build results
+[Bb]in/
+[Oo]bj/
+**/bin/
+**/obj/
+artifacts/
+
+# NuGet
+*.nupkg
+.nuget/
+packages/
+
+# ASP.NET / .NET Core
+project.lock.json
+project.fragment.lockfile
+*.db
+*.db-shm
+*.db-wal
+
+# Logs and runtime files
+Logs/
+logs/
+*.log
+TestResults/
+coverage/
+coverage.*.xml
+
+# Secret / local config files
+secrets.json
+appsettings.*.Local.json
+appsettings.*.Secrets.json
+appsettings.Local.json
+*.PublishSettings
+*.usersecrets
+
+# Entity Framework / Database files
+*.mdf
+*.ldf
+*.sqlite
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# JetBrains Rider caches
+.idea/
+*.sln.iml
+
+# Ignore build outputs from CI/CD agents
+bin/
+obj/

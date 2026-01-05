@@ -1,0 +1,43 @@
+@model IEnumerable<StudentManagement.Models.Student>
+
+@{
+    Layout = "_Layout";
+}
+
+<h1>Students</h1>
+
+<p>
+    <a asp-controller="Student" asp-action="Create">Create New</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Mobile</th>
+            <th>Address</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var s in Model)
+    {
+        <tr>
+            <td>@s.Id</td>
+            <td>@s.FirstName</td>
+            <td>@s.LastName</td>
+            <td>@s.Email</td>
+            <td>@s.Mobile</td>
+            <td>@s.Address</td>
+            <td>
+                <a asp-controller="Student" asp-action="Edit" asp-route-id="@s.Id">Edit</a> |
+                <a asp-controller="Student" asp-action="Details" asp-route-id="@s.Id">Details</a> |
+                <a asp-controller="Student" asp-action="Delete" asp-route-id="@s.Id">Delete</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
